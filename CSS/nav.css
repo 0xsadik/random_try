@@ -1,0 +1,27 @@
+
+
+@font-face {
+    font-family: poppinbld;
+    src: url(../Font/poppins-bld.ttf);
+}
+
+.nav_wrap li {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_wrap li a {
+    color: #fff;
+    margin: 10px 25px;
+    font-size: 15px;
+    font-family: poppinbld;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav_wrap li a:hover {
+    color: var(--yellow);
+}

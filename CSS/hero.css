@@ -1,0 +1,57 @@
+
+@font-face {
+    font-family: popbold;
+    src: url(../Font/poppins-bld.ttf);
+}
+
+.hero_wrap {
+    height: 700px;
+    background-image: url(../IMG/hero_back.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    opacity: 0.7;
+}
+
+.left {
+    padding-top: 15%;
+    padding-left: 15%;
+}
+
+.left h1 {
+    font-size: 60px;
+    font-family: popbold;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 1%;
+}
+
+.order {
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    border: 2px solid var(--yellow);
+    background: var(--yellow);
+    padding: 17px 30px;
+    font-family: popbold;
+}
+.order:hover {
+    background: none;
+    color: var(--yellow);
+    font-weight: 500;
+}
+@media (max-width: 768px) {
+    .hero_wrap {
+        height: 600px;
+    }
+}
+
+@media (max-width: 576px){
+    .hero_wrap {
+        height: 500px;
+    }
+    .left h1 {
+        font-size: 50px;
+        margin-bottom: 3%;
+    }
+} 

@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: poppinlight;
+    src: url(./Font/poppins-thin.ttf);
+}
+
+@font-face {
+    font-family: poppinbold;
+    src: url(./Font/poppins-bld.ttf);
+}
+
+@font-face {
+    font-family: hgate;
+    src: url(./Font/holligate.ttf);
+}
+
+:root {
+    --yellow: #E8BC50;
+    --background: #0A0A0A;
+}
+
+body {
+    background-color: var(--background);
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* head style  */
+
+.head_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+.icon_wrap i {
+    margin: 10px 10px;
+    font-size: 21px;
+    color: #fff;
+}
+.icon_wrap i:hover {
+    color: var(--yellow);
+}
+
+.text_wrap h1 {
+    font-family: hgate;
+    color: var(--yellow);
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.button_wrap button{
+    border: 1px solid var(--yellow);
+    margin: 10px 10px;
+    padding: 15px 35px;
+    font-size: 17px;
+    color: var(--yellow);
+    font-family: poppinlight;
+    font-weight: 600;
+    background: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .head_wrap {
+        width: 100%;
+    }
+    .icon_wrap i {
+        margin: 15px;
+    }
+    .text_wrap h1 {
+        font-size: 40px;
+    }
+    .button_wrap button {
+        border: 1px solid var(--yellow);
+        margin: 10px 10px;
+        padding: 15px 20px;
+        font-size: 15px;
+        color: var(--yellow);
+        font-family: poppinlight;
+        font-weight: 600;
+        background: none;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .head_wrap {
+        width: 100%;
+    }
+    .icon_wrap i {
+        margin: 3px;
+    }
+    .text_wrap h1 {
+        font-size: 30px;
+    }
+    .button_wrap button {
+        border: 1px solid var(--yellow);
+        margin: 10px 10px;
+        padding: 8px 10px;
+        font-size: 15px;
+        color: var(--yellow);
+        font-family: poppinlight;
+        font-weight: 600;
+        background: none;
+    }
+}
